@@ -56,9 +56,49 @@ outputs:
       pth_and_npth_single_file: false
 
   - name: 'bom'
-    comment: "Bill of Materials in CSV format"
+    comment: "BoM general format"
     type: bom
     dir: fabrication_output/manufacturing
+    options:
+      ref_separator: ','
+      columns:
+        - field: 'Quantity Per Pcb'
+          name: 'Quantity'
+        - field: Value
+          name: Value
+        - field: References
+          name: Parts
+        - field: Manufacturer
+          name: Manufacturer
+        - field: 'Description'
+          name: 'Description'
+        - field: 'LCSC Part'
+          name: 'LCSC Part #'
+
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: true
+
+  - name: 'bom_jlc'
+    comment: "BoM for JLC"
+    type: bom
+    dir: fabrication_output/manufacturing/jlc
+    options:
+      output: '%f_%i_jlc.%x'
+      ref_separator: ','
+      columns:
+        - field: Value
+          name: Comment
+        - field: References
+          name: Designator
+        - Footprint
+        - field: 'LCSC Part'
+          name: 'LCSC Part #'
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: true
 
   - name: 'position'
     comment: "Pick and place file, JLC style"
@@ -66,6 +106,29 @@ outputs:
     dir: fabrication_output/manufacturing
     options:
       format: CSV
+
+  - name: 'position_jlc'
+    comment: "Pick and place file, JLC style"
+    type: position
+    dir: fabrication_output/manufacturing/jlc
+    options:
+      output: '%f_cpl_jlc.%x'
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: false
+      columns:
+        - id: Ref
+          name: Designator
+        - Val
+        - Package
+        - id: PosX
+          name: "Mid X"
+        - id: PosY
+          name: "Mid Y"
+        - id: Rot
+          name: Rotation
+        - id: Side
+          name: Layer
 
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
@@ -137,4 +200,5 @@ outputs:
     type: ibom
     dir: fabrication_output/interactive_bom
     options:
+      blacklist: 'MH*, TP*'
       blacklist_empty_val: true
