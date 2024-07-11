@@ -16,9 +16,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Install zip utility
+      run: |
+        apt-get update && apt-get install -y zip
+        
     - name: Generate Gerber files
       run: |
         kibot -c kibot_config.yaml
+    - name: Listing files
+      run: |
+        ls
         
     - name: Zip fabrication_output folder
       run: |
