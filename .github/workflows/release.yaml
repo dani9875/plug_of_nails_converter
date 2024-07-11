@@ -1,0 +1,31 @@
+name: Release workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+  push:
+    tags:
+     - '*'
+
+jobs:
+  generate-artifacts:
+    name: kicad export
+    runs-on: ubuntu-latest
+    container: "setsoft/kicad_auto:ki8"
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Generate Gerber files
+      run: |
+        kibot -c kibot_config.yaml
+        
+    - name: Zip fabrication_output folder
+      run: |
+        zip -r fabrication_output.zip fabrication_output
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: fabrication_output
+        path: fabrication_output.zip
