@@ -49,3 +49,5 @@ jobs:
         name: ${{ env.RELEASE_VERSION }} release
         files: fabrication_output.zip
         draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
