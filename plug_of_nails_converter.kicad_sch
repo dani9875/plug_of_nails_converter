@@ -3,7 +3,13 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "b569f504-7765-456f-8f1f-adbf3d4150e7")
-	(paper "A4")
+	(paper "A5")
+	(title_block
+		(title "Plug of nails to pin header")
+		(date "2024-07-12")
+		(rev "v2.0")
+		(company "perseluspy")
+	)
 	(lib_symbols
 		(symbol "pepy_sym_lib:[10P_2X5_IDC_MALE]TE Connectivity 5103308-1"
 			(exclude_from_sim no)
@@ -680,6 +686,18 @@
 		)
 		(uuid 785f396f-f83d-452f-b68f-7a06b3f3f703)
 	)
+	(rectangle
+		(start 27.94 25.4)
+		(end 114.3 53.34)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid eb1153cf-de84-47c6-98f2-bc3ae183ec93)
+	)
 	(text "Mounting holes\n"
 		(exclude_from_sim no)
 		(at 168.0881 51.1421 0)
@@ -693,8 +711,21 @@
 		)
 		(uuid "bf958306-790d-44fa-ba4b-d52b90d78103")
 	)
+	(text "Connector connections\n"
+		(exclude_from_sim no)
+		(at 90.932 52.324 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc869c24-0d53-41b4-8abc-f69e7c3e1a4f")
+	)
 	(label "P5"
-		(at 81.28 38.1 180)
+		(at 81.28 40.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -705,7 +736,7 @@
 		(uuid "2c2d53dd-a404-426b-9975-58498cb15df4")
 	)
 	(label "P5"
-		(at 35.56 38.1 180)
+		(at 35.56 40.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -716,7 +747,7 @@
 		(uuid "39f5fa2b-e6fa-431b-9ffc-702076bf5022")
 	)
 	(label "P2"
-		(at 101.6 33.02 0)
+		(at 101.6 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -727,7 +758,7 @@
 		(uuid "476449f0-908c-4b7c-bc12-2b00aeabc257")
 	)
 	(label "P4"
-		(at 55.88 35.56 0)
+		(at 55.88 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -738,7 +769,7 @@
 		(uuid "4bd8beb2-6f41-42c1-a1e5-283119451539")
 	)
 	(label "P1"
-		(at 81.28 33.02 180)
+		(at 81.28 35.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -749,7 +780,7 @@
 		(uuid "5c7c841e-54df-41c2-bab8-a60988ad7819")
 	)
 	(label "P3"
-		(at 35.56 35.56 180)
+		(at 35.56 38.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -760,7 +791,7 @@
 		(uuid "5d92eb96-8801-4c38-9bf4-8fd2405deca4")
 	)
 	(label "P7"
-		(at 35.56 40.64 180)
+		(at 35.56 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -771,7 +802,7 @@
 		(uuid "658c346c-8435-4aa9-ad07-f04c81ecf793")
 	)
 	(label "P8"
-		(at 101.6 40.64 0)
+		(at 101.6 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -782,7 +813,7 @@
 		(uuid "694e60ef-e3b1-4383-8a92-b8f44d08e742")
 	)
 	(label "P9"
-		(at 35.56 43.18 180)
+		(at 35.56 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -793,7 +824,7 @@
 		(uuid "6c96c206-7625-45b7-ae4b-122a7db72d51")
 	)
 	(label "P7"
-		(at 81.28 40.64 180)
+		(at 81.28 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -804,7 +835,7 @@
 		(uuid "7857941a-2d61-4fa4-9f81-84f8f9f99c44")
 	)
 	(label "P9"
-		(at 81.28 43.18 180)
+		(at 81.28 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -815,7 +846,7 @@
 		(uuid "7cec2330-04d7-4752-ab12-92acdf44291d")
 	)
 	(label "P10"
-		(at 101.6 43.18 0)
+		(at 101.6 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -826,7 +857,7 @@
 		(uuid "7da53a9c-364e-40f5-83e3-5da07300786b")
 	)
 	(label "P6"
-		(at 55.88 38.1 0)
+		(at 55.88 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -837,7 +868,7 @@
 		(uuid "82f6b18b-2b5d-4f98-95ff-e030c5501ede")
 	)
 	(label "P1"
-		(at 35.56 33.02 180)
+		(at 35.56 35.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -848,7 +879,7 @@
 		(uuid "9eb91264-a7cb-4a7d-82ce-753467cd54a2")
 	)
 	(label "P10"
-		(at 55.88 43.18 0)
+		(at 55.88 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -859,7 +890,7 @@
 		(uuid "a7c30ebf-e749-44db-8813-39b3834eb93b")
 	)
 	(label "P2"
-		(at 55.88 33.02 0)
+		(at 55.88 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -870,7 +901,7 @@
 		(uuid "b142e5dd-d58f-40f0-b45a-207414af13e8")
 	)
 	(label "P6"
-		(at 101.6 38.1 0)
+		(at 101.6 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -881,7 +912,7 @@
 		(uuid "bd000bf3-5410-43b4-adbe-8f8ed8433413")
 	)
 	(label "P4"
-		(at 101.6 35.56 0)
+		(at 101.6 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -892,7 +923,7 @@
 		(uuid "c4841368-6b83-4a25-b6db-e8b2b0564f1c")
 	)
 	(label "P3"
-		(at 81.28 35.56 180)
+		(at 81.28 38.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -903,7 +934,7 @@
 		(uuid "e55ecdae-ccfa-432d-a96f-487c75d1ff6a")
 	)
 	(label "P8"
-		(at 55.88 40.64 0)
+		(at 55.88 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1049,7 +1080,7 @@
 	)
 	(symbol
 		(lib_id "pepy_sym_lib:[10P_2X5_IDC_MALE]TE Connectivity 5103308-1")
-		(at 45.72 38.1 0)
+		(at 45.72 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1058,14 +1089,6 @@
 		(fields_autoplaced yes)
 		(uuid "44a2f6b7-254e-4817-b9a5-b025d020d165")
 		(property "Reference" "J1"
-			(at 45.72 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5103308-1"
 			(at 45.72 27.94 0)
 			(effects
 				(font
@@ -1073,16 +1096,15 @@
 				)
 			)
 		)
-		(property "Footprint" "pepy_sym_lib:[10P_2X5_IDC_MALE]TE Connectivity 5103308-1"
-			(at 45.72 50.8 0)
+		(property "Value" "5103308-1"
+			(at 45.72 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Header-Connectors_TE-Connectivity_5103308-1_Horn-connector-2-5-pitch2-54mm-Straight-line_C86466.html"
+		(property "Footprint" "pepy_sym_lib:[10P_2X5_IDC_MALE]TE Connectivity 5103308-1"
 			(at 45.72 53.34 0)
 			(effects
 				(font
@@ -1091,8 +1113,17 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Header-Connectors_TE-Connectivity_5103308-1_Horn-connector-2-5-pitch2-54mm-Straight-line_C86466.html"
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Headers & Wire Housings HDR VERT DOUBLE 10P low profile"
-			(at 45.72 38.1 0)
+			(at 45.72 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1101,7 +1132,7 @@
 			)
 		)
 		(property "Manufacturer" "TE Connectivity"
-			(at 45.72 60.452 0)
+			(at 45.72 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1110,7 +1141,7 @@
 			)
 		)
 		(property "LCSC Part" "C86466"
-			(at 45.72 55.88 0)
+			(at 45.72 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1159,7 +1190,7 @@
 	)
 	(symbol
 		(lib_id "pepy_sym_lib:[10P_HEADER_STR]Ckmtw(Shenzhen Cankemeng) B-2100S10P-B110")
-		(at 91.44 38.1 0)
+		(at 91.44 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1168,14 +1199,6 @@
 		(fields_autoplaced yes)
 		(uuid "788cfbed-1cb8-46d8-a07e-2d495e357489")
 		(property "Reference" "J2"
-			(at 91.44 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B-2100S10P-B110"
 			(at 91.44 27.94 0)
 			(effects
 				(font
@@ -1183,16 +1206,15 @@
 				)
 			)
 		)
-		(property "Footprint" "pepy_sym_lib:[10P_HEADER_STR]Ckmtw(Shenzhen Cankemeng) B-2100S10P-B110"
-			(at 91.44 50.8 0)
+		(property "Value" "B-2100S10P-B110"
+			(at 91.44 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Male-Header_Headers-Pins-2-5P-2-54mm-Straight-line_C124387.html"
+		(property "Footprint" "pepy_sym_lib:[10P_HEADER_STR]Ckmtw(Shenzhen Cankemeng) B-2100S10P-B110"
 			(at 91.44 53.34 0)
 			(effects
 				(font
@@ -1201,16 +1223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Straight 2.54mm 10P 6mm -40℃~+105℃ 3mm 2.54mm 双排 Black Brass 2x5P 2.54mm Plugin,P=2.54mm Pin Headers ROHS"
-			(at 91.44 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C124387"
+		(property "Datasheet" "https://lcsc.com/product-detail/Male-Header_Headers-Pins-2-5P-2-54mm-Straight-line_C124387.html"
 			(at 91.44 55.88 0)
 			(effects
 				(font
@@ -1219,8 +1232,26 @@
 				(hide yes)
 			)
 		)
+		(property "Description" "Straight 2.54mm 10P 6mm -40℃~+105℃ 3mm 2.54mm 双排 Black Brass 2x5P 2.54mm Plugin,P=2.54mm Pin Headers ROHS"
+			(at 91.44 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C124387"
+			(at 91.44 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Manufacturer" "Ckmtw(Shenzhen Cankemeng)"
-			(at 91.44 61.468 0)
+			(at 91.44 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
