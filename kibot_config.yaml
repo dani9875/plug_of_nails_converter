@@ -74,6 +74,7 @@ outputs:
     type: bom
     dir: fabrication_output/manufacturing/general_bom_and_pick_and_place
     options:
+      output: 'plug_of_nails_bom_general.%x'
       ref_separator: ','
       columns:
         - field: 'Quantity Per Pcb'
@@ -96,7 +97,7 @@ outputs:
     type: bom
     dir: fabrication_output/manufacturing/jlc_bom_and_pick_and_place
     options:
-      output: '%f_%i_jlc.%x'
+      output: 'plug_of_nails_bom_jlc.%x'
       ref_separator: ','
       columns:
         - field: Value
@@ -112,10 +113,11 @@ outputs:
         quote_all: true
 
   - name: 'position'
-    comment: "Pick and place file, JLC style"
+    comment: "Pick and place file, general style"
     type: position
     dir: fabrication_output/manufacturing/general_bom_and_pick_and_place
     options:
+      output: 'plug_of_nails_pick_and_place_general.%x'
       format: CSV
       only_smd: false
       units: millimeters
@@ -126,7 +128,7 @@ outputs:
     type: position
     dir: fabrication_output/manufacturing/jlc_bom_and_pick_and_place
     options:
-      output: '%f_cpl_jlc.%x'
+      output: 'plug_of_nails_pick_and_place_jlc.%x'
       format: CSV
       units: millimeters
       separate_files_for_front_and_back: false

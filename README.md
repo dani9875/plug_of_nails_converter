@@ -8,7 +8,10 @@ Comming soon...
 
 ### Version: v2.0
 Changelog:
--
+
+- Component library added as submodule
+- KiBot config first usable file finished
+. Connectors changed sides
 
 ### Version: v1.0
 Changelog:
