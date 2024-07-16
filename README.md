@@ -1,14 +1,13 @@
 # Plug of nails converter
 
 # How to
-Comming soon...
+Coming soon...
 
 
 ## Release notes
 
 ### Version: v2.0
 Changelog:
-
 - Component library added as submodule
 - KiBot config first usable file finished
 . Connectors changed sides
