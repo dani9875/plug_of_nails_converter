@@ -37,7 +37,7 @@ jobs:
         zip -r fabrication_output.zip fabrication_output
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: fabrication_output
         path: fabrication_output.zip
