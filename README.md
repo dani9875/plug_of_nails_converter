@@ -6,6 +6,11 @@ Coming soon...
 
 ## Release notes
 
+### Version: v3.0
+Changelog:
+- USB and free-lead power input  
+- J-Link EDU Mini support header
+
 ### Version: v2.0
 Changelog:
 - Component library added as submodule
